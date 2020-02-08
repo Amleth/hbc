@@ -93,13 +93,48 @@ public class SitestreamExample {
     public void onUserProfileUpdate(long forUser, User user) { }
 
     @Override
+    public void onUserSuspension(long l, long l1) {
+
+    }
+
+    @Override
+    public void onUserDeletion(long l, long l1) {
+
+    }
+
+    @Override
     public void onBlock(long forUser, User source, User target) { }
 
     @Override
     public void onUnblock(long forUser, User source, User target) { }
 
     @Override
+    public void onRetweetedRetweet(User user, User user1, Status status) {
+
+    }
+
+    @Override
+    public void onFavoritedRetweet(User user, User user1, Status status) {
+
+    }
+
+    @Override
     public void onException(Exception e) { }
+
+    @Override
+    public void onQuotedTweet(User user, User user1, Status status) {
+
+    }
+
+    @Override
+    public void onMute(long l, User user, User user1) {
+
+    }
+
+    @Override
+    public void onUnmute(long l, User user, User user1) {
+
+    }
   };
 
   public static void main(String[] args) {
